@@ -1,0 +1,14 @@
+{
+  "name": "Escuela de Póker",
+  "short_name": "Póker",
+  "description": "Aprende Texas Hold'em No Limit jugando: lecciones, minijuegos y partidas contra bots con entrenador.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c100f",
+  "theme_color": "#0d6a47",
+  "icons": [
+    { "src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

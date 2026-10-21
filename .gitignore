@@ -1,0 +1,7 @@
+# Generados por los scripts de build
+dist/
+artifact/
+# Dependencias y configuración local
+node_modules/
+.netlify/
+.claude/

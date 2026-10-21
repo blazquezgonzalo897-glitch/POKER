@@ -1,0 +1,16 @@
+{
+  "name": "escuela-de-poker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicación web para aprender Texas Hold'em No Limit jugando: lecciones, minijuegos y partidas contra bots con entrenador.",
+  "scripts": {
+    "test": "node tests/run-tests.js",
+    "build": "node tests/run-tests.js && node tools/build-site.js",
+    "build:artifact": "node tools/build-artifact.js",
+    "start": "node tools/serve.js",
+    "preview": "node tools/serve.js --dist"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

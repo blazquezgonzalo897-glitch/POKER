@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Escuela de Póker</title>
+  <meta name="description" content="Aprende Texas Hold'em No Limit desde cero: lecciones cortas, ejercicios con puntuación y partidas contra bots con un entrenador que explica cada decisión. Fichas ficticias y sin registro.">
+  <meta name="theme-color" content="#0d6a47" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c100f" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Escuela de Póker">
+  <meta property="og:description" content="Aprende Texas Hold'em No Limit jugando: lecciones, minijuegos y partidas contra bots con entrenador.">
+  <meta property="og:locale" content="es_ES">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">&#x2660;&#xFE0E;</span><span class="brand-name">Escuela de Póker<small>Texas Hold'em No Limit</small></span></a>
+      <nav class="side-nav" aria-label="Secciones">
+        <span class="nav-indicator" aria-hidden="true"></span>
+        <a class="nav-item" href="#/" data-nav="home"><span data-icon="home"></span>Inicio</a>
+        <a class="nav-item" href="#/curso" data-nav="course"><span data-icon="course"></span>Curso</a>
+        <a class="nav-item" href="#/minijuegos" data-nav="games"><span data-icon="target"></span>Entrenamiento</a>
+        <a class="nav-item" href="#/mesa" data-nav="setup"><span data-icon="table"></span>Mesa</a>
+        <a class="nav-item" href="#/escenarios" data-nav="scenarios"><span data-icon="flag"></span>Escenarios</a>
+        <a class="nav-item" href="#/historial" data-nav="history"><span data-icon="history"></span>Historial</a>
+        <a class="nav-item" href="#/progreso" data-nav="progress"><span data-icon="chart"></span>Progreso</a>
+        <a class="nav-item" href="#/errores" data-nav="errors"><span data-icon="refresh"></span>Repaso<span class="count" data-mistakes hidden></span></a>
+      </nav>
+      <div class="side-foot">
+        <div class="player-card" data-player></div>
+        <div class="tools">
+          <button class="icon-btn" type="button" data-act="glossary" aria-label="Abrir el glosario" title="Glosario"><span data-icon="book"></span></button>
+          <button class="icon-btn" type="button" data-act="theme"></button>
+          <button class="icon-btn" type="button" data-act="sound"></button>
+          <a class="icon-btn" href="#/ajustes" aria-label="Ajustes" title="Ajustes"><span data-icon="settings"></span></a>
+        </div>
+      </div>
+    </aside>
+    <div class="content">
+      <header class="topbar">
+        <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">&#x2660;&#xFE0E;</span><span class="brand-name">Escuela de Póker</span></a>
+        <div class="topbar-right">
+          <div class="player-mini" data-player="mini"></div>
+          <button class="icon-btn" type="button" data-act="glossary" aria-label="Abrir el glosario" title="Glosario"><span data-icon="book"></span></button>
+          <button class="icon-btn" type="button" data-act="theme"></button>
+          <button class="icon-btn" type="button" data-act="sound"></button>
+          <a class="icon-btn" href="#/ajustes" aria-label="Ajustes" title="Ajustes"><span data-icon="settings"></span></a>
+        </div>
+      </header>
+      <main id="main" class="main" tabindex="-1"></main>
+    </div>
+  </div>
+  <nav class="tabbar" aria-label="Navegación">
+    <a href="#/" data-nav="home"><span data-icon="home"></span>Inicio</a>
+    <a href="#/curso" data-nav="course"><span data-icon="course"></span>Curso</a>
+    <a href="#/minijuegos" data-nav="games"><span data-icon="target"></span>Entrenar</a>
+    <a href="#/mesa" data-nav="setup"><span data-icon="table"></span>Mesa</a>
+    <a href="#/progreso" data-nav="progress"><span data-icon="chart"></span>Progreso</a>
+  </nav>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:2rem;font-family:system-ui,sans-serif">Esta aplicación necesita JavaScript.</p></noscript>
+  <script src="js/core.js"></script>
+  <script src="js/preflop-data.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/minigames.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/play.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

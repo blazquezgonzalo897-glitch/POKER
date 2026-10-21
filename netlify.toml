@@ -1,0 +1,9 @@
+# Despliegue en Netlify: comprueba el motor del juego, genera dist/ y lo publica.
+# Las cabeceras de seguridad y caché están en dist/_headers (las crea tools/build-site.js),
+# así también se aplican si subes la carpeta dist a mano con Netlify Drop.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
